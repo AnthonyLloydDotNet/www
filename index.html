@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anthony Lloyd</title>
+  <link rel="icon" href="./triquetra.svg" type="image/svg+xml">
+
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 20% 10%, #111827 0%, var(--bg) 60%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .card {
+      max-width: 520px;
+      width: 100%;
+      background: rgba(17, 24, 39, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 2.5rem;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    p.bio {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+
+    footer {
+      padding: 2rem 1rem 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flags {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.9;
+    }
+
+    .flags img {
+      width: 64px;
+      height: auto;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.4));
+      transition: transform 0.2s ease;
+    }
+
+    .flags img:hover {
+      transform: translateY(-2px) scale(1.05);
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 1.8rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .flags img {
+        width: 52px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="card">
+      <h1>Anthony Lloyd</h1>
+      <p class="bio">
+      </p>
+
+      <div class="links">
+        <a href="mailto:contact@anthonylloyd.net">contact@anthonylloyd.net</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="flags">
+      <img src="./Flag_of_Australia.svg" alt="Flag of Australia" />
+      <img src="./Flag_of_Wales.svg" alt="Flag of Wales" />
+    </div>
+  </footer>
+</body>
+</html>
